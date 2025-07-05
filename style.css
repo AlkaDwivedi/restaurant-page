@@ -229,3 +229,139 @@ footer {
     flex-direction: column;
   }
 }
+/* Special Offers Section */
+.special_offers {
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.special_offers h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.special_offers p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.offers_cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.offer_card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(4px);
+  border-radius: 12px;
+  padding: 20px 30px;
+  width: 280px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.offer_card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Testimonials Section */
+.testimonials {
+  background: linear-gradient(135deg, #c3ec52 0%, #0ba29d 100%);
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.testimonial_cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.testimonial_card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  max-width: 300px;
+  font-style: italic;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.testimonial_card:hover {
+  transform: scale(1.05);
+}
+
+.testimonial_card h4 {
+  margin-top: 15px;
+  font-weight: 500;
+}
+/* Call to Action Section */
+.cta {
+  background: linear-gradient(90deg, #ff6a00 0%, #ee0979 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta_container h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cta_container p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta_button {
+  padding: 15px 30px;
+  font-size: 16px;
+  background: white;
+  color: #ee0979;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cta_button:hover {
+  background: #fff1f7;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 786px) {
+  /* ... existing styles ... */
+  .testimonial_cards,
+  .offers_cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial_card,
+  .offer_card {
+    width: 90%;
+  }
+
+  .cta_container h2 {
+    font-size: 28px;
+  }
+
+  .cta_container p {
+    font-size: 16px;
+  }
+}
